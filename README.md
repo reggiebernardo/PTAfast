@@ -5,6 +5,8 @@ Python code for fast calculation of the overlap reduction function in pulsar tim
 
 Please cite the above papers when using PTAFast, and let us know about any questions or comments. Happy to discuss. Thanks. - Reggie and Kin
 
+Usage (to be updated): Store PTAfast in working directory. Run python from there.
+
 *Minimal example* (Hellings-Downs curve): <br />
 import numpy as np <br />
 from PTAfast.hellingsdowns import HellingsDowns as HD <br />
@@ -24,3 +26,6 @@ NEorf = ST(lm = lMax, v = 0.5, fD = 500) # v = GW speed, fD = distance <br />
 orf = NEorf.get_ORF(Zta) # add option return_tv = True for total var <br />
 ave = orf['ORF'] # mean <br />
 err = np.sqrt(orf['CV']) # cosmic variance uncertainty
+
+*Other examples* (ORF for HD and nonEinsteinian GW polarizations): <br />
+See ex1_hdcurve.py, ex2_halfluminaltensor.py, etc. Run in terminal, e.g., "python ex1_hdcurve".
