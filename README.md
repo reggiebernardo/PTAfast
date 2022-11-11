@@ -1,6 +1,7 @@
+[![DOI](https://zenodo.org/badge/564638325.svg)](https://zenodo.org/badge/latestdoi/564638325)
 # PTAfast
 
-Python code for a fast calculation of the overlap reduction function in pulsar timing array (PTA) produced by the stochastic gravitational wave background for arbitrary polarizations, propagation velocities, and pulsar distances. Based on [arXiv:2208.12538](https://arxiv.org/abs/2208.12538) and [arXiv:2209.14834](https://arxiv.org/abs/2209.14834).
+Python code for fast calculation of the overlap reduction function in pulsar timing array (PTA) produced by the stochastic gravitational wave background for arbitrary polarizations, propagation velocities, and pulsar distances. Based on [arXiv:2208.12538](https://arxiv.org/abs/2208.12538) and [arXiv:2209.14834](https://arxiv.org/abs/2209.14834).
 
 Please cite the above papers when using PTAFast, and let us know about any questions or comments. Happy to discuss. Thanks. - Reggie and Kin
 
