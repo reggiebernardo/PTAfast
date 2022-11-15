@@ -5,7 +5,7 @@ Python code for ***fast*** calculation of the overlap reduction function in ***P
 
 Please cite the above papers when using PTAfast, and let us know about any questions or comments. Always happy to discuss. Thanks. - **Reggie and Kin**
 
-Usage (to be updated): Store `PTAfast` in working directory. Run python from there.
+Installation: `pip install PTAfast`
 
 ##### *Minimal example* (Hellings-Downs curve): <br />
 > `import numpy as np` <br />
