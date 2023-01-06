@@ -36,3 +36,7 @@ Installation: `pip install PTAfast`
 <tr><td><img src="https://github.com/reggiebernardo/PTAfast/blob/1a21a2e20e0f0e12e9d3102e6184a53a7d2e727e/hdlowangle.png"></td></tr>
 <tr><td class="caption">The PTA spatial correlation signal produced by light speed nanohertz GWs given infinite (Hellings-Downs/HD, red solid line, vertical hatches for the variance) and finite (30 parsecs, blue dashed line, diagonal hatches for the variance) pulsar distances. $\zeta \in (0^\circ, 180^\circ)$ is the angle between two MSPs. The lines correspond to the mean of the correlation while the colored bands show the two-sigma cosmic variance uncertainty.</td></tr>
 </table>
+
+#### Upcoming
+- Varying astrophysical pulsar distances; <br />
+- RSF-PSM subdegree calculations (PTA analogy of pN-NR waveforms for compact binaries).
