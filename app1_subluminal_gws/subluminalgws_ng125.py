@@ -4,7 +4,7 @@ from PTAfast.vector import Vector
 from PTAfast.hellingsdowns import HellingsDowns as HD
 
 # import data
-data_loc = '../../../../datasets/orf_n12p5.txt'
+data_loc = 'https://raw.githubusercontent.com/reggiebernardo/galileon_pta/main/orf_n12p5.txt'
 n12p5 = np.loadtxt(data_loc)
 
 tta_rad = n12p5[0]
