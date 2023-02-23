@@ -1,0 +1,30 @@
+likelihood:
+  loglike: import_module('subluminal_tensors_ng125').loglike_tensors
+params:
+  v:
+    prior:
+      min: 0.01
+      max: 1.0
+    ref:
+      min: 0.48
+      max: 0.52
+    proposal: 0.005
+    latex: v
+  A2:
+    prior:
+      min: 1.0e-32
+      max: 5.0e-29
+    ref:
+      min: 1.0e-30
+      max: 2.0e-30
+    proposal: 2.5e-31
+    latex: A^2
+  mg:
+    derived: import_module('subluminal_tensors_ng125').mg
+    latex: m_{\rm g} \ [10^{-22} \ {\rm eV}]
+sampler:
+  mcmc:
+    Rminus1_stop: 0.001
+    max_tries: 100000
+timing: true
+output: subltensors

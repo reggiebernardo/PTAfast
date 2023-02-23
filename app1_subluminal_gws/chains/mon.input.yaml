@@ -1,0 +1,20 @@
+likelihood:
+  loglike: import_module('subluminal_tensors_ng125').loglike_mon
+params:
+  A2:
+    prior:
+      min: 1.0e-32
+      max: 5.0e-29
+    ref:
+      min: 1.0e-30
+      max: 2.0e-30
+    proposal: 2.5e-31
+    latex: A^2
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    max_tries: 100000
+timing: true
+output: mon
+packages_path: null
+test: false
