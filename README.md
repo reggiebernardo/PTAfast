@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/564638325.svg)](https://zenodo.org/badge/latestdoi/564638325)
+[![DOI](https://zenodo.org/badge/564638325.svg)](https://zenodo.org/badge/latestdoi/564638325) <a href="https://ascl.net/2211.001"><img src="https://img.shields.io/badge/ascl-2211.001-blue.svg?colorB=262255" alt="ascl:2211.001" /></a>
 # PTAfast
 
 Python code for ***fast*** calculation of the overlap reduction function in ***P**ulsar **T**iming **A**rray* produced by the stochastic gravitational wave background for arbitrary polarizations, propagation velocities, and pulsar distances. Based on [arXiv:2208.12538](https://arxiv.org/abs/2208.12538) and [arXiv:2209.14834](https://arxiv.org/abs/2209.14834).
