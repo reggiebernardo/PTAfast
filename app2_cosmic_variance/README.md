@@ -2,12 +2,12 @@ Python codes for studying the influence of the cosmic variance on SGWB analysis 
 
 #### Main notebooks: results
 > correlations_ng.ipynb - PTA correlations analysis with real data <br />
-> correlations_mock.ipynb - PTA correlations analysis with mock data
+> correlations_mock.ipynb - PTA correlations analysis with mock data <br />
+> mock_generation.ipynb - mock correlations generation with PTAfast
 
 #### python and yaml files
 > correlations_yyy.py - likelihoods setup <br />
 > evidence_zzz.py - Bayesian evidence calculations via `ultranest` <br />
 > ____.yaml - likelihoods and priors for `cobaya`
 
-Run as e.g., `mpirun -n 12 cobaya-run hd_unc2.yaml` and `mpirun -n 12 python evidence_ng_hd.py`
-
+Run as e.g., `mpirun -n 12 cobaya-run hd_unc2.yaml` and `mpirun -n 12 python evidence_ng_hd.py`. Sampling results stored in folder chains and txt files results\_uuu.txt.
