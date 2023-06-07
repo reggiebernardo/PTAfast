@@ -1,0 +1,60 @@
+theory: null
+likelihood:
+  loglike:
+    type: []
+    speed: -1
+    stop_at_error: false
+    version: null
+    external: import_module('correlations_another').ll_hd_unc2
+    input_params:
+    - A2
+    output_params: []
+params:
+  A2:
+    prior:
+      min: 0.01
+      max: 100
+    ref:
+      min: 1
+      max: 2
+    proposal: 0.25
+    latex: A^2
+  A:
+    derived: import_module('correlations_another').A
+    latex: A
+sampler:
+  mcmc:
+    burn_in: 0
+    max_tries: 100000
+    covmat: null
+    covmat_params: null
+    proposal_scale: 2.4
+    output_every: 60s
+    learn_every: 40d
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 2.0
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_min: 0.0
+    max_samples: .inf
+    Rminus1_stop: 0.005
+    Rminus1_cl_stop: 0.2
+    Rminus1_cl_level: 0.95
+    Rminus1_single_split: 4
+    measure_speeds: true
+    oversample_power: 0.4
+    oversample_thin: true
+    drag: false
+    blocking:
+    - - 1
+      - - A2
+    callback_function: null
+    callback_every: null
+    seed: null
+    check_every: null
+    oversample: null
+    drag_limits: null
+    fallback_covmat_scale: 4
+    version: 3.2.1
+timing: true
+output: hd_unc2_another
+version: 3.2.1
