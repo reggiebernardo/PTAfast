@@ -1,0 +1,34 @@
+likelihood:
+  loglike: import_module('correlations_mock').ll_GRN
+
+params:
+  A2:
+    prior:
+      min: 0.01
+      max: 30
+    ref:
+      min: 1
+      max: 2
+    proposal: 0.25
+    latex: A^2
+  sigma:
+    prior:
+      min: 0
+      max: 3
+    ref:
+      min: 0
+      max: 0.5
+    proposal: 0.05
+    latex: \sigma
+  A:
+    derived: import_module('correlations_mock').A
+    latex: A
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.005
+    max_tries: 100000
+
+timing: True
+
+output: chains/grn_mock

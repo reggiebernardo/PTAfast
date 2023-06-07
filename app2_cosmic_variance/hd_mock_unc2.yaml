@@ -1,0 +1,25 @@
+likelihood:
+  loglike: import_module('correlations_mock').ll_hd_unc2
+
+params:
+  A2:
+    prior:
+      min: 0.01
+      max: 30
+    ref:
+      min: 1
+      max: 2
+    proposal: 0.25
+    latex: A^2
+  A:
+    derived: import_module('correlations_mock').A
+    latex: A
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.005
+    max_tries: 100000
+
+timing: True
+
+output: chains/hd_mock_unc2
