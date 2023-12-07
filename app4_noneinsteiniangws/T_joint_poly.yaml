@@ -1,0 +1,37 @@
+likelihood:
+  loglike: import_module('ng15cptalikes').ll_T_joint
+
+params:
+  v:
+    prior:
+      min: 0.001
+      max: 1.000
+    ref:
+      min: 0.90
+      max: 0.94
+    proposal: 0.002
+    latex: v
+  m_g:
+    derived: import_module('ng15cptalikes').m_g
+    latex: m_{\rm g}
+
+sampler:
+  polychord:
+    file_root: polyc/T_joint
+    nlive: 200d
+    num_repeats: 2d
+    nprior: 10nlive
+    do_clustering: True
+    precision_criterion: 0.99
+    logzero: -1e30
+    posteriors: True
+    equals: True
+    cluster_posteriors: True
+    write_resume: True
+    read_resume: True
+    write_stats: True
+    write_live: True
+    write_dead: True
+    write_prior: True
+
+output: polyc/T_joint

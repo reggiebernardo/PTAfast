@@ -1,0 +1,34 @@
+likelihood:
+  loglike: import_module('cptacorrelationlikes').ll_V_cpta
+params:
+  v:
+    prior:
+      min: 0.001
+      max: 1.0
+    ref:
+      min: 0.9
+      max: 0.94
+    proposal: 0.002
+    latex: v
+  m_g:
+    derived: import_module('cptacorrelationlikes').m_g
+    latex: m_{\rm g}
+sampler:
+  polychord:
+    file_root: polyc/V_cpta
+    nlive: 200d
+    num_repeats: 2d
+    nprior: 10nlive
+    do_clustering: true
+    precision_criterion: 0.99
+    logzero: -1.0e+30
+    posteriors: true
+    equals: true
+    cluster_posteriors: true
+    write_resume: true
+    read_resume: true
+    write_stats: true
+    write_live: true
+    write_dead: true
+    write_prior: true
+output: V_cpta

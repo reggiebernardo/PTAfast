@@ -1,0 +1,3 @@
+﻿sigma	\sigma
+logprior__0*	\log\pi_\mathrm{0}
+loglike__loglike*	\log\mathcal{L}_\mathrm{loglike}

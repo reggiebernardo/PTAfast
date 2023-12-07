@@ -1,0 +1,32 @@
+likelihood:
+  loglike: import_module('cptacorrelationlikes').ll_ucGRN
+params:
+  sigma:
+    prior:
+      min: 0
+      max: 1
+    ref:
+      min: 0.1
+      max: 0.2
+    proposal: 0.002
+    latex: \sigma
+  mu: 0
+sampler:
+  polychord:
+    file_root: polyc/ucgrn0_cpta
+    nlive: 200d
+    num_repeats: 2d
+    nprior: 10nlive
+    do_clustering: true
+    precision_criterion: 0.999
+    logzero: -1.0e+30
+    posteriors: true
+    equals: true
+    cluster_posteriors: true
+    write_resume: true
+    read_resume: true
+    write_stats: true
+    write_live: true
+    write_dead: true
+    write_prior: true
+output: ucgrn0_cpta

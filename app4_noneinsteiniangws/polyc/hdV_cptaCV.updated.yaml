@@ -1,0 +1,73 @@
+theory: null
+likelihood:
+  loglike:
+    type: []
+    speed: -1
+    stop_at_error: false
+    version: null
+    external: import_module('cptacorrelationlikes').ll_hdV_cptaCV
+    input_params:
+    - v
+    - r2
+    output_params: []
+params:
+  v:
+    prior:
+      min: 0.001
+      max: 1.0
+    ref:
+      min: 0.5
+      max: 0.6
+    proposal: 0.002
+    latex: v
+  r2:
+    prior:
+      min: 0.0
+      max: 1.0
+    ref:
+      min: 0.1
+      max: 0.2
+    proposal: 0.005
+    latex: r^2
+  m_g:
+    derived: import_module('cptacorrelationlikes').m_g
+    latex: m_{\rm g}
+sampler:
+  polychord:
+    path: null
+    nlive: 200d
+    num_repeats: 2d
+    nprior: 10nlive
+    nfail: nlive
+    do_clustering: true
+    precision_criterion: 0.99
+    max_ndead: .inf
+    compression_factor: 0.36787944117144233
+    callback_function: null
+    logzero: -1.0e+30
+    boost_posterior: 0
+    feedback: null
+    synchronous: true
+    nlives: null
+    maximise: false
+    measure_speeds: true
+    oversample_power: 0.4
+    blocking:
+    - - 1
+      - - v
+        - r2
+    confidence_for_unbounded: 0.9999995
+    seed: null
+    file_root: polyc/hdV_cptaCV
+    posteriors: true
+    equals: true
+    cluster_posteriors: true
+    write_resume: true
+    read_resume: true
+    write_stats: true
+    write_live: true
+    write_dead: true
+    write_prior: true
+    version: null
+output: hdV_cptaCV
+version: 3.3.1
