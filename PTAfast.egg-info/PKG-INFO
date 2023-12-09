@@ -1,9 +1,12 @@
 Metadata-Version: 2.1
 Name: PTAfast
-Version: 0.0.0
+Version: 0.0.1
 Summary: Fast code for calculation of SGWB spatial correlations in PTA
 Home-page: https://github.com/reggiebernardo/PTAfast
 Author: Reginald Christian Bernardo
 Author-email: reginaldchristianbernardo@gmail.com
 License: MIT license
 License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: py3nj
