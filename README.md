@@ -85,4 +85,16 @@ See `ex1_hdcurve.py`, `ex2_halfluminaltensor.py`, etc. In terminal, e.g., `pytho
 ## Upcoming
 - Varying astrophysical pulsar distances <br />
 - Angular control for more efficient calculation <br />
-- RSF-PSM subdegree calculations (PTA analogy of pN-NR waveforms for compact binaries)
+- RSF-PSM subdegree calculations (PTA analogy of pN-NR waveforms for compact binaries) <br />
+
+### How to cite
+
+```latex
+@misc{ptafast,
+  author       = {Reginald Christian Bernardo and Kin-Wang Ng},
+  title        = {PTAfast: PTA correlations from stochastic gravitational wave background},
+  year         = {2022},
+  url          = {https://github.com/reggiebernardo/PTAfast},
+  eid          = {ascl:2211.001}
+}
+```
