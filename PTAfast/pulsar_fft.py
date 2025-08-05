@@ -2,28 +2,8 @@ import numpy as np
 from scipy.interpolate import pchip_interpolate #, interp1d
 
 
-# def get_fft(t, r, Tspan_yr=30, n_bins=30, xx=10):
-#     '''compute Fourier components of a time series (t, r)'''
-#     mask = np.isfinite(r)
-#     ts=t-np.min(t) # corrects for phase in fft calculation
-#     interp_func = interp1d(ts[mask], r[mask], kind='linear', fill_value="extrapolate")
-#     t_interp = np.linspace(0, (Tspan_yr*365.25), len(ts) * xx)
-#     r_interp = interp_func(t_interp)
-    
-#     # fft calculation
-#     N = len(t_interp)
-#     a0_fft=np.sum(r_interp)*2/N
-#     a_fft=np.array([np.sum(r_interp*np.sin(2*np.pi*k*np.arange(N)/N)) for k in np.arange(1, n_bins+1)])*2/N
-#     b_fft=np.array([np.sum(r_interp*np.cos(2*np.pi*k*np.arange(N)/N)) for k in np.arange(1, n_bins+1)])*2/N
-
-#     # return frequencies, 1 yr^-1 = 31.7 nHz
-#     yrinv_to_nhz = 31.7
-#     f0=(1/Tspan_yr)*yrinv_to_nhz
-#     freqs=np.arange(1, n_bins+1)*f0
-#     return a0_fft, a_fft, b_fft, freqs
-
 def get_fft(t, r, Tspan_yr=30, n_bins=30, xx=10):
-    '''Compute Fourier components of a time series (t, r) with improved interpolation handling.'''
+    '''compute Fourier components of a time series (t, r) with improved interpolation handling.'''
     
     # ensure finite values
     mask = np.isfinite(r)
