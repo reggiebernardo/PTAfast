@@ -7,8 +7,8 @@ See `residuals_tutorial.ipynb` for simulation (prefit residuals) of an unpolariz
 
 Please cite the above papers when using PTAfast. Feel free to reach out to us anytime. - **Reggie and Kin**
 
-Requires `libomp` and `gfortran` for `py3nj` (Wigner-3j symbols) <br />
-Recommended Installation (via conda environment): Clone repo and run `conda env create -f ptafast.yml` <br />
+Requires `libomp` and `gfortran` for `py3nj`; easy fix with `brew install libomp gfortran` <br />
+Recommended Installation (via conda environment): clone repo and `conda env create -f ptafast.yml` <br />
 Easy Installation: `pip install PTAfast`
 
 ## Minimal Examples
