@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.11
+  - python=3.10
   - numpy
   - scipy
   - matplotlib
@@ -15,6 +15,7 @@ dependencies:
   - pip
   - pip:
       - py3nj
+      - ptafast
       
 # System-level dependencies (install via Homebrew):
 #   brew install libomp gfortran
