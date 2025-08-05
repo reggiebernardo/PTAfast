@@ -3,9 +3,13 @@
 
 Python code for ***fast*** calculation of the overlap reduction function in ***P**ulsar **T**iming **A**rray* produced by a generally anisotropic polarized stochastic gravitational wave background for arbitrary GW polarizations, GW speeds, and pulsar distances. Based on [arXiv:2208.12538](https://arxiv.org/abs/2208.12538), [arXiv:2209.14834](https://arxiv.org/abs/2209.14834), and [arXiv:2312.03383](https://arxiv.org/abs/2312.03383).
 
-Please cite the above papers when using PTAfast, and feel free to reach out to us for any questions or comments. Thanks. - **Reggie and Kin**
+See `residuals_tutorial.ipynb` for simulation (prefit residuals) of an unpolarized or circularly polarized Gaussian stochastic gravitational wave background in a PTA ([arXiv:2507.15756](https://arxiv.org/abs/2507.15756)).
 
-Installation: `pip install PTAfast`
+Please cite the above papers when using PTAfast. Feel free to reach out to us anytime. - **Reggie and Kin**
+
+Requires `libomp` and `gfortran` for `py3nj` (Wigner-3j symbols) <br />
+Recommended Installation: Clone repo and run `conda env create ptafast.yml` <br />
+Easy Installation: `pip install PTAfast`
 
 ## Minimal Examples
 #### Hellings & Downs curve
